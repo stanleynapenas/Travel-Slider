@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Travel Slider</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+
+    <!-- Slider -->
+    <div class="slider">
+      <!-- Slider Radio -->
+      <input type="radio" id="i1" name="images" checked />
+      <input type="radio" id="i2" name="images" />
+      <input type="radio" id="i3" name="images" />
+      <!-- END slider Radio-->
+
+      <!-- Slider contents -->
+      <div class="slide" id="one">
+
+          <img src="/assets/img/travel-beach.jpg">
+
+            <label class="prev" for="i3"><span>&#x2039;</span></label>
+            <label class="next" for="i2"><span>&#x203a;</span></label>
+
+      </div>
+
+      <div class="slide" id="two">
+
+          <img src="/assets/img/travel-budapest.jpg" >
+
+            <label class="prev" for="i1"><span>&#x2039;</span></label>
+            <label class="next" for="i3"><span>&#x203a;</span></label>
+
+      </div>
+
+      <div class="slide" id="three">
+          <img src="/assets/img/travel-car.jpg">
+
+            <label class="prev" for="i2"><span>&#x2039;</span></label>
+            <label class="next" for="i1"><span>&#x203a;</span></label>
+      </div>
+
+      <!-- End slider contents -->
+
+      <!-- Slider NAV -->
+
+      <div id="nav_slide">
+        <label for="i1" class="dots" id="dot1"></label>
+        <label for="i2" class="dots" id="dot2"></label>
+        <label for="i3" class="dots" id="dot3"></label>
+      </div>
+
+      <!-- End Slider Nav -->
+
+      
+    </div>
+
+    <!-- END Slider -->
+
+
+  </body>
 </html>
